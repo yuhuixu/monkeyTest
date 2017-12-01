@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # python module for interacting with adb
 import os
 

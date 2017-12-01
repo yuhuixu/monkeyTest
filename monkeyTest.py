@@ -99,9 +99,11 @@ def start(devicess):
     pid = BaseMonitor.get_pid(mc["package_name"], devices)
     cpu_kel = BaseMonitor.get_cpu_kel(devices)
     beforeBattery = BaseMonitor.get_battery(devices)
+    print 'start------------123'
     while True:
         with open(mc["monkey_log"], encoding='utf-8') as monkeylog:
             time.sleep(1)  # 每1秒采集检查一次
+            print "star()----1"
             BaseMonitor.cpu_rate(pid, cpu_kel, devices)
             BaseMonitor.get_men(mc["package_name"], devices)
             BaseMonitor.get_fps(mc["package_name"], devices)
