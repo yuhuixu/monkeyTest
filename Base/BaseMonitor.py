@@ -123,10 +123,18 @@ def get_pid(pkg_name, devices):
 
 
 def get_flow(pid, type, devices):
+    """
+    adb shell " ps  | grep com.zzl.falcon.internal"
+    adb shell cat /proc/1461/net/dev
+    :param pid:
+    :param type:
+    :param devices:
+    :return:
+    """
     # pid = get_pid(pkg_name)
     upflow = downflow = 0
     if pid is not None:
-        cmd = "adb -s " + devices + " shell cat /proc/" + pid + "/net/dev"
+        cmd = "adb -s " + devices + " shell cat /proc/" + pid + "/net/dev" #adb shell cat /proc/
         print(cmd)
         _flow = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
                                  stderr=subprocess.PIPE).stdout.readlines()

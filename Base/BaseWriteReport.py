@@ -10,6 +10,7 @@ PATH = lambda p: os.path.abspath(
 
 
 def report(info):
+    print info
     workbook = xlsxwriter.Workbook('report.xlsx')
     bo = BaseReport.OperateReport(workbook)
     bo.monitor(info)

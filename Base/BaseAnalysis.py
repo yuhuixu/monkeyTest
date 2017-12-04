@@ -48,18 +48,28 @@ def maxFlow(flow):
     print(flow)
     _flowUp = []
     _flowDown = []
+    print("---maxFlow2----------2")
+    print "len flow:",len(flow[0])
     for i in range(len(flow[0])):
-        if i + 1 == len(flow[0]):
-            break
-        _flowUp.append(math.ceil((flow[0][i + 1] - flow[0][i]) / 1024))
-        print("---maxFlow2222---------")
+        print("---_flowUp---------")
         print(_flowUp)
-    for i in range(len(flow[1])):
-        if i + 1 == len(flow[1]):
+        print "i:",i
+        if i + 1 == len(flow[0]):
+            _flowUp.append(math.ceil((flow[0]) / 1024))
             break
-        _flowDown.append(math.ceil((flow[1][i + 1] - flow[1][i]) / 1024))
+        print "flow[0]:",flow[0]
+        _flowUp.append(math.ceil((flow[0][i + 1] - flow[0][i]) / 1024))
+
+    print("---_flowUp---------")
+    print(_flowUp)
+    for i in range(len(flow[1])):
+
         print("---maxFlow3333---------")
         print(_flowDown)
+        if i + 1 == len(flow[1]):
+            _flowDown.append(math.ceil((flow[1]) / 1024))
+            break
+        _flowDown.append(math.ceil((flow[1][i + 1] - flow[1][i]) / 1024))
     if _flowUp:
         maxFpsUp = str(max(_flowUp)) + "KB"  # 上行流量
     else:
@@ -74,15 +84,20 @@ def avgFlow(flow):
     _flowUp = []
     _flowDown = []
     for i in range(len(flow[0])):
+        _flowUp.append((flow[0][i + 1] - flow[0][i]) / 1024)
         if i + 1 == len(flow[0]):
             break
-        _flowUp.append((flow[0][i + 1] - flow[0][i])/1024)
-
+    print "_flowUp:",_flowUp
     for i in range(len(flow[1])):
+        _flowDown.append((flow[1][i + 1] - flow[1][i]) / 1024)
+        print "_flowDown:",_flowDown
         if i + 1 == len(flow[1]):
             break
-        _flowDown.append((flow[1][i + 1] - flow[1][i])/1024)
-    avgFpsUp = str(math.ceil(sum(_flowUp) / len(_flowUp))) + "KB"
+
+    print  "11111111111-------------"
+    print _flowUp
+    avgFpsUp = str(math.ceil(sum(_flowUp) / len(_flowUp))) + "KB"   #不能为0
+    print  "22222222222-------------"
     avgFpsDown = str(math.ceil(sum(_flowDown) / len(_flowDown))) + "KB"
     return avgFpsUp, avgFpsDown
 

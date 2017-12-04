@@ -1,0 +1,145 @@
+:Monkey: seed=1512710537421 count=500
+:AllowPackage: com.zzl.falcon.internal
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: 25.0%
+//   6: 15.0%
+//   7: 2.0%
+//   8: 2.0%
+//   9: 1.0%
+//   10: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(199.0,556.0)
+:Sending Touch (ACTION_UP): 0:(211.41135,550.2381)
+:Sending Touch (ACTION_DOWN): 0:(378.0,848.0)
+:Sending Touch (ACTION_UP): 0:(372.63452,850.61536)
+:Sending Touch (ACTION_DOWN): 0:(428.0,780.0)
+:Sending Touch (ACTION_UP): 0:(425.34088,772.98706)
+:Sending Touch (ACTION_DOWN): 0:(438.0,523.0)
+:Sending Touch (ACTION_UP): 0:(442.79187,531.88586)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(32.0,1076.0)
+:Sending Touch (ACTION_UP): 0:(21.857103,1067.8464)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(180.0,716.0)
+:Sending Touch (ACTION_UP): 0:(169.93398,790.76776)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=http://www.51bel.com cmp=com.android.browser/.BrowserActivity } in package com.android.browser
+    //[calendar_time:2017-12-03 22:26:50.479  system_uptime:162858725]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(120.0,691.0)
+:Sending Touch (ACTION_UP): 0:(147.86699,676.57227)
+    // Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.android.dialer/.DialtactsActivity } in package com.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(271.0,136.0)
+:Sending Touch (ACTION_UP): 0:(199.57193,78.055176)
+:Sending Touch (ACTION_DOWN): 0:(339.0,701.0)
+:Sending Touch (ACTION_UP): 0:(340.4146,708.2323)
+:Sending Touch (ACTION_DOWN): 0:(704.0,290.0)
+:Sending Touch (ACTION_UP): 0:(675.8834,259.5597)
+:Sending Touch (ACTION_DOWN): 0:(380.0,54.0)
+:Sending Touch (ACTION_UP): 0:(331.19943,0.0)
+:Sending Touch (ACTION_DOWN): 0:(430.0,178.0)
+:Sending Touch (ACTION_UP): 0:(429.1518,175.65045)
+:Sending Touch (ACTION_DOWN): 0:(673.0,234.0)
+:Sending Touch (ACTION_UP): 0:(672.9549,232.74513)
+:Sending Touch (ACTION_DOWN): 0:(75.0,618.0)
+:Sending Touch (ACTION_UP): 0:(78.38376,617.0929)
+:Sending Touch (ACTION_DOWN): 0:(634.0,364.0)
+:Sending Touch (ACTION_UP): 0:(635.1,366.02182)
+:Sending Touch (ACTION_DOWN): 0:(91.0,135.0)
+:Sending Touch (ACTION_UP): 0:(96.80229,112.224304)
+:Sending Touch (ACTION_DOWN): 0:(95.0,75.0)
+:Sending Touch (ACTION_UP): 0:(95.04055,84.38009)
+:Sending Touch (ACTION_DOWN): 0:(347.0,180.0)
+:Sending Touch (ACTION_UP): 0:(346.91623,178.88055)
+    // activityResuming(com.zzl.falcon.internal)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(129.0,991.0)
+:Sending Touch (ACTION_UP): 0:(152.172,976.1274)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+    //[calendar_time:2017-12-03 22:26:51.873  system_uptime:162859992]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(505.0,447.0)
+:Sending Touch (ACTION_UP): 0:(502.70712,461.15613)
+    // Allowing start of Intent { cmp=com.zzl.falcon.internal/com.zzl.falcon.setting.CustomerServiceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(259.0,1010.0)
+:Sending Touch (ACTION_UP): 0:(274.71475,1099.686)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(738.0,250.0)
+:Sending Touch (ACTION_UP): 0:(744.26263,248.15721)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(744.0,754.0)
+:Sending Touch (ACTION_UP): 0:(744.53125,752.65784)
+:Sending Touch (ACTION_DOWN): 0:(598.0,866.0)
+:Sending Touch (ACTION_UP): 0:(575.8494,920.4278)
+:Sending Touch (ACTION_DOWN): 0:(290.0,548.0)
+:Sending Touch (ACTION_UP): 0:(374.86395,677.36945)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+    //[calendar_time:2017-12-03 22:26:53.590  system_uptime:162861708]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(69.0,1158.0)
+:Sending Touch (ACTION_UP): 0:(127.35611,1063.5326)
+:Sending Touch (ACTION_DOWN): 0:(537.0,254.0)
+:Sending Touch (ACTION_UP): 0:(532.0086,263.2206)
+:Sending Touch (ACTION_DOWN): 0:(264.0,27.0)
+:Sending Touch (ACTION_UP): 0:(274.6483,37.147064)
+:Sending Touch (ACTION_DOWN): 0:(59.0,95.0)
+:Sending Touch (ACTION_UP): 0:(11.624744,81.406944)
+:Sending Touch (ACTION_DOWN): 0:(739.0,200.0)
+:Sending Touch (ACTION_UP): 0:(669.6255,208.18155)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(272.0,392.0)
+:Sending Touch (ACTION_UP): 0:(273.92453,384.8602)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(39.0,1078.0)
+:Sending Touch (ACTION_UP): 0:(65.944305,1066.6333)
+    // activityResuming(com.zzl.falcon.internal)
+:Sending Touch (ACTION_DOWN): 0:(365.0,424.0)
+:Sending Touch (ACTION_UP): 0:(380.82745,429.50284)
+:Sending Touch (ACTION_DOWN): 0:(151.0,477.0)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(151.48271,480.46045)
+    // Injection Failed
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(330.0,332.0)
+:Sending Touch (ACTION_UP): 0:(329.56793,331.64313)
+:Sending Touch (ACTION_DOWN): 0:(294.0,833.0)
+:Sending Touch (ACTION_UP): 0:(297.97382,834.72845)
+:Sending Touch (ACTION_DOWN): 0:(60.0,562.0)
+    //[calendar_time:2017-12-03 22:26:55.867  system_uptime:162863985]
+    // Sending event #400
+:Sending Touch (ACTION_UP): 0:(90.2246,579.27203)
+    // Allowing start of Intent { cmp=com.zzl.falcon.internal/com.zzl.falcon.WebViewActivity } in package com.zzl.falcon.internal
+    // Allowing start of Intent { cmp=com.zzl.falcon.internal/com.zzl.falcon.login.LoginActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(118.0,1149.0)
+:Sending Touch (ACTION_UP): 0:(154.76883,1130.5615)
+:Sending Touch (ACTION_DOWN): 0:(101.0,825.0)
+:Sending Touch (ACTION_UP): 0:(105.38578,842.3915)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(19.0,390.0)
+:Sending Touch (ACTION_UP): 0:(18.268303,381.6926)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(660.0,643.0)
+:Sending Touch (ACTION_UP): 0:(657.26556,644.16254)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=2 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=10383ms (0ms mobile, 0ms wifi, 10383ms not connected)
+// Monkey finished

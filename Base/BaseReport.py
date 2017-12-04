@@ -94,7 +94,7 @@ class OperateReport:
                     cpu = readInfo(t[wrap]["cpu"])
                     men = readInfo(t[wrap]["men"])
                     fps = readInfo(t[wrap]["fps"])
-                    flow = readInfo(t[wrap]["flow"])   #????问题所在没有写入文件
+                    flow = readInfo(t[wrap]["flow"])
                     print("----wrap-----")
                     print(flow)
                     _write_center(worksheet, "G" + str(temp), BaseAnalysis.maxCpu(cpu), self.wd)
@@ -105,8 +105,9 @@ class OperateReport:
                     _write_center(worksheet, "L" + str(temp), BaseAnalysis.avgFps(fps), self.wd)
                     _write_center(worksheet, "M" + str(temp), t[wrap]["header"]["beforeBattery"], self.wd)
                     _write_center(worksheet, "N" + str(temp), t[wrap]["header"]["afterBattery"], self.wd)
-
+                    print "here"
                     _maxFlow = BaseAnalysis.maxFlow(flow)
+                    print flow
                     _avgFLow = BaseAnalysis.avgFlow(flow)
                     print("-----_maxFlow----------")
                     print(_maxFlow)
@@ -190,6 +191,7 @@ class OperateReport:
         self.wd.close()
 
     def analysis(self, info):
+        print "1111"
         for t in info:
             for wrap in t:
                 name = wrap + "detail" # sheet名字

@@ -58,19 +58,19 @@ def mkdirInit(devices, app, data=None):
     flow = PATH("./info/" + devices + "_flow.pickle")
     battery = PATH("./info/" + devices + "_battery.pickle")
     fps = PATH("./info/" + devices + "_fps.pickle")
-    if bflag :
-        devices =devices1
+    # if bflag :
+    #     devices =devices1
     app[devices] = {"cpu": cpu, "men": men, "flow": flow, "battery": battery, "fps": fps, "header": get_phome(devices)}
     OperateFile(cpu).mkdir_file()
-    OperateFile(men).mkdir_file()
+    OperateFile(men).mkdir_file()#????
     OperateFile(flow).mkdir_file()
     OperateFile(battery).mkdir_file()
     OperateFile(fps).mkdir_file()
     OperateFile(PATH("./info/sumInfo.pickle")).mkdir_file() # 用于记录是否已经测试完毕，里面存的是一个整数
     OperateFile(PATH("./info/info.pickle")).mkdir_file() # 用于记录统计结果的信息，是[{}]的形式
-
+    print "1111111"
     writeSum(0, data, PATH("./info/sumInfo.pickle")) # 初始化记录当前真实连接的设备数
-
+    print "222222"
 def runnerPool():
     shutil.rmtree((PATH("./info/")))  # 删除持久化目录
     os.makedirs(PATH("./info/")) # 创建持久化目录
@@ -125,7 +125,7 @@ def start(devicess):
             BaseMonitor.get_fps(mc["package_name"], devices)
             BaseMonitor.get_flow(pid, mc["net"], devices)
             BaseMonitor.get_battery(devices)
-            if monkeylog.read().count('Monkey finished') > 0:    #问题所在
+            if monkeylog.read().count('Monkey finished') > 0:
                 endtime = datetime.datetime.now()
                 print(str(devices)+"测试完成咯")
                 writeSum(1, path=PATH("./info/sumInfo.pickle"))
@@ -140,7 +140,7 @@ def start(devicess):
                     # report(go.info)
     if readInfo(PATH("./info/sumInfo.pickle")) <= 0:
         print(readInfo(PATH("./info/info.pickle")))
-        report(readInfo(PATH("./info/info.pickle")))#????
+        report(readInfo(PATH("./info/info.pickle")))#这里有问题
         subprocess.Popen("taskkill /f /t /im adb.exe", shell=True)
         # shutil.rmtree((PATH("./info/"))) # 删除持久化目录
         print("------来吧------")

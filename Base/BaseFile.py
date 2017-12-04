@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 __author__ = 'shikun'
 import os
-
+import BasePickle
 '''
 操作文件
 '''
 class OperateFile:
     #method(r,w,a)
     def __init__(self, file, method='w+'):
-        self.file = file
+        self.file = BasePickle.verify_colon(file)
         self.method = method
         self.fileHandle = None
 
