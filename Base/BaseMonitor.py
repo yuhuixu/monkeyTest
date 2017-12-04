@@ -23,6 +23,8 @@ def get_men(pkg_name, devices):
         men2 = int(re.findall("TOTAL.(\d+)*", s_men, re.S)[0])
     except:
         men2 = 0
+    # if ':'in devices:
+    #     devices=devices.replace(':',' ')
     writeInfo(men2, PATH("../info/" + devices + "_men.pickle"))
     return men2
     # men_s = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
@@ -79,6 +81,8 @@ def get_fps(pkg_name, devices):
                 vsync_overtime += int(render_time / 16.67)
 
     _fps = int(frame_count * 60 / (frame_count + vsync_overtime))
+    # if ':'in devices:
+    #     devices=devices.replace(':',' ')
     writeInfo(_fps, PATH("../info/" + devices + "_fps.pickle"))
 
     # return (frame_count, jank_count, fps)
@@ -99,6 +103,8 @@ def get_battery(devices):
 
     except:
         battery2 = 90
+    # if ':'in devices:
+    #     devices=devices.replace(':',' ')
     writeInfo(battery2, PATH("../info/" + devices + "_battery.pickle"))
 
     return battery2

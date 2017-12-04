@@ -46,11 +46,20 @@ def get_phome(devices):
 
 def mkdirInit(devices, app, data=None):
     # destroy(devices)
+    print 'devices:',devices
+    bflag= False
+    # if ':'in devices:
+    #     print '替换 :'
+    #     bflag=True
+    #     devices1=devices
+    #     devices=devices.replace(':', ' ')  #device 包含':' ,无法写入文件名,因为文件名不能有特殊符号
     cpu = PATH("./info/" + devices + "_cpu.pickle")
     men = PATH("./info/" + devices + "_men.pickle")
     flow = PATH("./info/" + devices + "_flow.pickle")
     battery = PATH("./info/" + devices + "_battery.pickle")
     fps = PATH("./info/" + devices + "_fps.pickle")
+    if bflag :
+        devices =devices1
     app[devices] = {"cpu": cpu, "men": men, "flow": flow, "battery": battery, "fps": fps, "header": get_phome(devices)}
     OperateFile(cpu).mkdir_file()
     OperateFile(men).mkdir_file()
@@ -66,14 +75,21 @@ def runnerPool():
     shutil.rmtree((PATH("./info/")))  # 删除持久化目录
     os.makedirs(PATH("./info/")) # 创建持久化目录
     devices_Pool = []
+    # ba.wait_devices()
     devices = ba.attached_devices()
     if devices:
         for item in range(0, len(devices)):
             _app = {}
+            # if ':'in devices[item]:
+            #     print '替换 :'
+            #     devices[item]=devices[item].replace(':', ' ')  #device 包含':' ,无法写入文件名,因为文件名不能有特殊符号
+            # _app["devices"+str(item)] = devices[item]
             _app["devices"] = devices[item]
             _app["num"] = len(devices)
             devices_Pool.append(_app)
+        print devices
         pool = Pool(len(devices))
+        print devices_Pool
         pool.map(start, devices_Pool)
         pool.close()
         pool.join()
@@ -101,7 +117,7 @@ def start(devicess):
     beforeBattery = BaseMonitor.get_battery(devices)
     print 'start------------123'
     while True:
-        with open(mc["monkey_log"], encoding='utf-8') as monkeylog:
+        with open(mc["monkey_log"], 'a+') as monkeylog:
             time.sleep(1)  # 每1秒采集检查一次
             print "star()----1"
             BaseMonitor.cpu_rate(pid, cpu_kel, devices)
@@ -109,7 +125,7 @@ def start(devicess):
             BaseMonitor.get_fps(mc["package_name"], devices)
             BaseMonitor.get_flow(pid, mc["net"], devices)
             BaseMonitor.get_battery(devices)
-            if monkeylog.read().count('Monkey finished') > 0:
+            if monkeylog.read().count('Monkey finished') > 0:    #问题所在
                 endtime = datetime.datetime.now()
                 print(str(devices)+"测试完成咯")
                 writeSum(1, path=PATH("./info/sumInfo.pickle"))
@@ -124,7 +140,7 @@ def start(devicess):
                     # report(go.info)
     if readInfo(PATH("./info/sumInfo.pickle")) <= 0:
         print(readInfo(PATH("./info/info.pickle")))
-        report(readInfo(PATH("./info/info.pickle")))
+        report(readInfo(PATH("./info/info.pickle")))#????
         subprocess.Popen("taskkill /f /t /im adb.exe", shell=True)
         # shutil.rmtree((PATH("./info/"))) # 删除持久化目录
         print("------来吧------")
@@ -152,7 +168,7 @@ def killport():
     os.popen("adb start-server")
 if __name__ == '__main__':
     killport()
-    time.sleep(1)
+    time.sleep(5)
     runnerPool()
     # p = Process(target=runnerPool, args=())
     # p.start()

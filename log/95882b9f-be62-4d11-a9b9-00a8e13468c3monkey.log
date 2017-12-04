@@ -1,0 +1,143 @@
+:Monkey: seed=1512415037805 count=500
+:AllowPackage: com.zzl.falcon.internal
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: 25.0%
+//   6: 15.0%
+//   7: 2.0%
+//   8: 2.0%
+//   9: 1.0%
+//   10: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(728.0,58.0)
+:Sending Touch (ACTION_UP): 0:(730.7828,70.35681)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(429.0,1014.0)
+:Sending Touch (ACTION_UP): 0:(430.95694,1015.64624)
+:Sending Touch (ACTION_DOWN): 0:(740.0,939.0)
+:Sending Touch (ACTION_UP): 0:(742.53046,927.30035)
+    // Rejecting start of Intent { act=android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(760.0,806.0)
+:Sending Touch (ACTION_UP): 0:(768.0,809.01245)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(71.0,1136.0)
+:Sending Touch (ACTION_UP): 0:(35.545673,1084.9756)
+:Sending Touch (ACTION_DOWN): 0:(37.0,303.0)
+:Sending Touch (ACTION_UP): 0:(38.253437,322.9367)
+:Sending Touch (ACTION_DOWN): 0:(446.0,1018.0)
+:Sending Touch (ACTION_UP): 0:(434.95288,1014.65186)
+    // Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.android.dialer/.DialtactsActivity } in package com.android.dialer
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+    //[calendar_time:2017-11-30 12:26:46.048  system_uptime:27138030]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(753.0,801.0)
+:Sending Touch (ACTION_UP): 0:(756.326,802.7846)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+:Sending Touch (ACTION_DOWN): 0:(245.0,672.0)
+:Sending Touch (ACTION_UP): 0:(247.1872,670.4275)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(521.0,899.0)
+:Sending Touch (ACTION_UP): 0:(524.19354,901.75793)
+:Sending Touch (ACTION_DOWN): 0:(721.0,855.0)
+:Sending Touch (ACTION_UP): 0:(705.09344,856.7702)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=http://www.51bel.com cmp=com.android.browser/.BrowserActivity } in package com.android.browser
+:Sending Touch (ACTION_DOWN): 0:(304.0,216.0)
+:Sending Touch (ACTION_UP): 0:(303.12918,212.01912)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(42.0,1156.0)
+:Sending Touch (ACTION_UP): 0:(48.574345,1163.4297)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+    //[calendar_time:2017-11-30 12:26:46.748  system_uptime:27138701]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(138.0,21.0)
+:Sending Touch (ACTION_UP): 0:(139.12904,21.479548)
+:Sending Touch (ACTION_DOWN): 0:(22.0,568.0)
+:Sending Touch (ACTION_UP): 0:(12.479388,569.6099)
+:Sending Touch (ACTION_DOWN): 0:(389.0,862.0)
+:Sending Touch (ACTION_UP): 0:(326.02274,904.3788)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(600.0,209.0)
+:Sending Touch (ACTION_UP): 0:(599.3281,217.679)
+:Sending Touch (ACTION_DOWN): 0:(471.0,595.0)
+:Sending Touch (ACTION_UP): 0:(474.42334,574.06433)
+:Sending Touch (ACTION_DOWN): 0:(612.0,358.0)
+:Sending Touch (ACTION_UP): 0:(622.5374,354.54184)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,1178.0)
+:Sending Touch (ACTION_UP): 0:(424.82806,1184.0)
+:Sending Touch (ACTION_DOWN): 0:(621.0,337.0)
+:Sending Touch (ACTION_UP): 0:(621.0592,340.83087)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(295.0,937.0)
+:Sending Touch (ACTION_UP): 0:(212.10217,847.6362)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=http://www.51bel.com cmp=com.android.browser/.BrowserActivity } in package com.android.browser
+:Sending Touch (ACTION_DOWN): 0:(503.0,571.0)
+:Sending Touch (ACTION_UP): 0:(492.0159,590.35504)
+:Sending Touch (ACTION_DOWN): 0:(125.0,383.0)
+:Sending Touch (ACTION_UP): 0:(117.34087,380.4807)
+    //[calendar_time:2017-11-30 12:26:47.675  system_uptime:27139628]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(250.0,681.0)
+:Sending Touch (ACTION_UP): 0:(249.56323,684.29047)
+:Sending Touch (ACTION_DOWN): 0:(447.0,563.0)
+:Sending Touch (ACTION_UP): 0:(447.1997,562.3306)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.music/.MusicBrowserActivity } in package com.android.music
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(215.0,1104.0)
+:Sending Touch (ACTION_UP): 0:(196.43518,1120.0276)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(596.0,1121.0)
+:Sending Touch (ACTION_UP): 0:(596.2454,1114.0736)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(251.0,1073.0)
+:Sending Touch (ACTION_UP): 0:(250.30103,1076.673)
+:Sending Touch (ACTION_DOWN): 0:(98.0,360.0)
+:Sending Touch (ACTION_UP): 0:(98.395515,368.93973)
+:Sending Touch (ACTION_DOWN): 0:(572.0,1016.0)
+:Sending Touch (ACTION_UP): 0:(569.80096,1017.47003)
+    //[calendar_time:2017-11-30 12:26:48.143  system_uptime:27140096]
+    // Sending event #400
+    //[calendar_time:2017-11-30 12:26:48.143  system_uptime:27140096]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(454.0,164.0)
+:Sending Touch (ACTION_UP): 0:(460.75195,111.67974)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(362.0,435.0)
+:Sending Touch (ACTION_UP): 0:(359.42426,435.24112)
+:Sending Touch (ACTION_DOWN): 0:(719.0,585.0)
+:Sending Touch (ACTION_UP): 0:(701.0867,582.87195)
+:Sending Touch (ACTION_DOWN): 0:(322.0,1061.0)
+:Sending Touch (ACTION_UP): 0:(319.80283,1051.3883)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(63.0,439.0)
+:Sending Touch (ACTION_UP): 0:(74.64184,403.5808)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=1 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=4843ms (0ms mobile, 0ms wifi, 4843ms not connected)
+// Monkey finished

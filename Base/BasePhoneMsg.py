@@ -35,11 +35,8 @@ def getModel( devices):
     print(cmd)
     # output = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
     output = subprocess.check_output(cmd).decode()
-    print 'debug here 1'
-    result["release"] = re.findall("*version.release*", output, re.S)[0] #  Android 系统，如anroid 4.0  这里有问题啦
-    print 'debug here 2-------------'
+    result["release"] = re.findall("release(\S+)*", output, re.S)[0] #  Android 系统，如anroid 4.0  这里有问题啦
     result["phone_name"] = re.findall("ro.product.model(\S+)*", output, re.S)[0] # 手机名
-    print 'debug here 3---------'
     result["phone_model"] = re.findall("ro.product.brand(\S+)*", output, re.S)[0] # 手机品牌
     return result
 

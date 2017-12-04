@@ -94,7 +94,7 @@ class OperateReport:
                     cpu = readInfo(t[wrap]["cpu"])
                     men = readInfo(t[wrap]["men"])
                     fps = readInfo(t[wrap]["fps"])
-                    flow = readInfo(t[wrap]["flow"])
+                    flow = readInfo(t[wrap]["flow"])   #????问题所在没有写入文件
                     print("----wrap-----")
                     print(flow)
                     _write_center(worksheet, "G" + str(temp), BaseAnalysis.maxCpu(cpu), self.wd)
@@ -118,8 +118,8 @@ class OperateReport:
                     break
                 temp = temp + 1
 
-    def getCrashMsg(self, log):
-        with open(log, encoding="utf-8") as monkey_log:
+    def getCrashMsg(self, log):#encoding='utf-8'
+        with open(log) as monkey_log:
             lines = monkey_log.readlines()
             for line in lines:
                 if re.findall(go.ANR, line):

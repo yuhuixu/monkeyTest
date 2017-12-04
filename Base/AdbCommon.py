@@ -22,6 +22,7 @@ class AndroidDebugBridge(object):
     def fastboot(self, device_id):
         pass
 
+    # 等待设备
     # 检查设备
     def attached_devices(self):
         result = self.call_adb("devices")

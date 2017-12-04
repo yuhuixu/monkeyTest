@@ -2,6 +2,7 @@
 __author__ = "shikun"
 import pickle
 import os
+from time import sleep
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -9,6 +10,11 @@ PATH = lambda p: os.path.abspath(
 
 
 def writeSum(init, data=None, path="data.pickle"):
+    basename=os.path.basename(path)
+    if ':'in basename:
+        basename=basename.replace(':',' ')
+        dirname=os.path.dirname(path)
+        path=os.path.join(dirname,basename)
     if init == 0:
         result = data
     else:
@@ -22,8 +28,14 @@ def writeSum(init, data=None, path="data.pickle"):
 
 
 def readSum(path):
+    path_wait_exist(path)
+    basename=os.path.basename(path)
+    if ':'in basename:
+        basename=basename.replace(':',' ')
+        dirname=os.path.dirname(path)
+        path=os.path.join(dirname,basename)
     data = {}
-    with open(path, 'rb') as f:
+    with open(path, 'a+') as f:
         try:
             data = pickle.load(f)
         except EOFError:
@@ -35,11 +47,34 @@ def readSum(path):
     return data
 
 
+def path_wait_exist(path,timeout=16):
+    """
+    等待路径下文件生产,16秒
+    :param path:
+    :param timeout:
+    :return:
+    """
+    bflag = False
+    i=0
+    while not os.path.exists(path):
+        print ("等待2秒")
+        sleep(2)
+        if i==timeout%2:
+            break
+        i += 1
+
 def readInfo(path):
     data = []
-    with open(path, 'rb') as f:
+    path_wait_exist(path)
+    basename=os.path.basename(path)
+    if ':'in basename:
+        basename=basename.replace(':',' ')
+        dirname=os.path.dirname(path)
+        path=os.path.join(dirname,basename)
+    with open(path, 'a+') as f:
         try:
             data = pickle.load(f)
+            print data
             # print(data)
         except EOFError:
             data = []
@@ -51,6 +86,13 @@ def readInfo(path):
 
 
 def writeInfo(data, path="data.pickle"):
+    basename=os.path.basename(path)
+    if ':'in basename:
+        print "修改前地址:%s" %path
+        basename=basename.replace(':',' ')
+        dirname=os.path.dirname(path)
+        path=os.path.join(dirname,basename)
+        print "修改后地址:%s" % path
     _read = readInfo(path)
     result = []
     if _read:
