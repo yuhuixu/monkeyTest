@@ -48,28 +48,18 @@ def maxFlow(flow):
     print(flow)
     _flowUp = []
     _flowDown = []
-    print("---maxFlow2----------2")
-    print "len flow:",len(flow[0])
     for i in range(len(flow[0])):
-        print("---_flowUp---------")
-        print(_flowUp)
-        print "i:",i
         if i + 1 == len(flow[0]):
-            _flowUp.append(math.ceil((flow[0]) / 1024))
             break
-        print "flow[0]:",flow[0]
         _flowUp.append(math.ceil((flow[0][i + 1] - flow[0][i]) / 1024))
-
-    print("---_flowUp---------")
-    print(_flowUp)
+        print("---maxFlow2222---------")
+        print(_flowUp)
     for i in range(len(flow[1])):
-
-        print("---maxFlow3333---------")
-        print(_flowDown)
         if i + 1 == len(flow[1]):
-            _flowDown.append(math.ceil((flow[1]) / 1024))
             break
         _flowDown.append(math.ceil((flow[1][i + 1] - flow[1][i]) / 1024))
+        print("---maxFlow3333---------")
+        print(_flowDown)
     if _flowUp:
         maxFpsUp = str(max(_flowUp)) + "KB"  # 上行流量
     else:
@@ -83,22 +73,27 @@ def maxFlow(flow):
 def avgFlow(flow):
     _flowUp = []
     _flowDown = []
+
+
     for i in range(len(flow[0])):
-        _flowUp.append((flow[0][i + 1] - flow[0][i]) / 1024)
+        if len(flow[0]) == 1:
+            _flowUp.append((flow[0][0]) / 1024)
+            break
         if i + 1 == len(flow[0]):
             break
-    print "_flowUp:",_flowUp
+        _flowUp.append((flow[0][i + 1] - flow[0][i])/1024)
     for i in range(len(flow[1])):
-        _flowDown.append((flow[1][i + 1] - flow[1][i]) / 1024)
-        print "_flowDown:",_flowDown
+        if len(flow[1]) == 1:
+            _flowDown.append((flow[1][0]) / 1024)  #如果为1,不用计算
+            break
         if i + 1 == len(flow[1]):
             break
-
-    print  "11111111111-------------"
-    print _flowUp
-    avgFpsUp = str(math.ceil(sum(_flowUp) / len(_flowUp))) + "KB"   #不能为0
-    print  "22222222222-------------"
-    avgFpsDown = str(math.ceil(sum(_flowDown) / len(_flowDown))) + "KB"
+        _flowDown.append((flow[1][i + 1] - flow[1][i])/1024)
+    print "定位错误所在:eroDivisionError: integer division or modulo by zero"
+    print "_flowUp:", _flowUp
+    print "_flowDown:", _flowDown
+    avgFpsUp = str(math.ceil(sum(_flowUp) / len(_flowUp))) + "KB"  #问题所在2017年12月9日13:48:23
+    avgFpsDown = str(math.ceil(sum(_flowDown) / len(_flowDown))) + "KB"  #为什么flow 的地方出现fps计算,可能是名字定义错误
     return avgFpsUp, avgFpsDown
 
 if __name__ == '__main__':

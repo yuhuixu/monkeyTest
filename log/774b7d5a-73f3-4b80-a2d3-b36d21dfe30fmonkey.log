@@ -1,0 +1,129 @@
+:Monkey: seed=1513150772582 count=500
+:AllowPackage: com.zzl.falcon.internal
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: 25.0%
+//   6: 15.0%
+//   7: 2.0%
+//   8: 2.0%
+//   9: 1.0%
+//   10: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(139.0,145.0)
+:Sending Touch (ACTION_UP): 0:(121.33448,147.78177)
+:Sending Touch (ACTION_DOWN): 0:(685.0,670.0)
+:Sending Touch (ACTION_UP): 0:(691.40454,680.14246)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(465.0,317.0)
+:Sending Touch (ACTION_UP): 0:(452.01294,403.6036)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(733.0,477.0)
+:Sending Touch (ACTION_UP): 0:(749.6427,480.5904)
+:Sending Touch (ACTION_DOWN): 0:(735.0,114.0)
+:Sending Touch (ACTION_UP): 0:(738.41907,115.13251)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(346.0,647.0)
+:Sending Touch (ACTION_UP): 0:(353.5124,645.6052)
+:Sending Touch (ACTION_DOWN): 0:(690.0,1091.0)
+:Sending Touch (ACTION_UP): 0:(687.147,1082.3813)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(258.0,708.0)
+:Sending Touch (ACTION_UP): 0:(267.74393,698.9243)
+:Sending Touch (ACTION_DOWN): 0:(475.0,621.0)
+:Sending Touch (ACTION_UP): 0:(480.66898,621.0632)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(14.0,861.0)
+    //[calendar_time:2017-12-09 00:36:45.531  system_uptime:3558633]
+    // Sending event #100
+:Sending Touch (ACTION_UP): 0:(71.59045,865.2984)
+:Sending Touch (ACTION_DOWN): 0:(336.0,1016.0)
+:Sending Touch (ACTION_UP): 0:(333.1995,1012.35693)
+:Sending Touch (ACTION_DOWN): 0:(657.0,226.0)
+:Sending Touch (ACTION_UP): 0:(647.94867,239.52391)
+:Sending Touch (ACTION_DOWN): 0:(317.0,336.0)
+:Sending Touch (ACTION_UP): 0:(302.91434,330.93997)
+:Sending Touch (ACTION_DOWN): 0:(606.0,1131.0)
+:Sending Touch (ACTION_UP): 0:(612.42596,1145.4087)
+:Sending Touch (ACTION_DOWN): 0:(599.0,43.0)
+:Sending Touch (ACTION_UP): 0:(616.1222,100.62682)
+:Sending Touch (ACTION_DOWN): 0:(706.0,53.0)
+:Sending Touch (ACTION_UP): 0:(693.9531,48.613495)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+// CRASH: com.zzl.falcon.internal:leakcanary (pid 3607)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.internal.view.menu.MenuBuilder.close()' on a null object reference
+// Build Label: generic/vbox86p/vbox86p:5.1/LMY47D/genymotion03202140:userdebug/test-keys
+// Build Changelist: eng.genymotion.20170320.213640
+// Build Time: 1490046034000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.internal.view.menu.MenuBuilder.close()' on a null object reference
+// 	at android.widget.ActionMenuPresenter$OverflowPopup.onDismiss(ActionMenuPresenter.java:689)
+// 	at android.widget.PopupWindow.dismiss(PopupWindow.java:1413)
+// 	at android.widget.ListPopupWindow.dismiss(ListPopupWindow.java:656)
+// 	at com.android.internal.view.menu.MenuPopupHelper.dismiss(MenuPopupHelper.java:164)
+// 	at com.android.internal.view.menu.MenuPopupHelper.onKey(MenuPopupHelper.java:191)
+// 	at android.view.View.dispatchKeyEvent(View.java:8406)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1490)
+// 	at android.widget.ListView.dispatchKeyEvent(ListView.java:2130)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1495)
+// 	at android.widget.PopupWindow$PopupViewContainer.dispatchKeyEvent(PopupWindow.java:1722)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4020)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:3982)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3680)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3737)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3680)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3737)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3680)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3737)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5807)
+// 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5781)
+// 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5752)
+// 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:5897)
+// 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:185)
+// 	at android.os.MessageQueue.nativePollOnce(Native Method)
+// 	at android.os.MessageQueue.next(MessageQueue.java:143)
+// 	at android.os.Looper.loop(Looper.java:122)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+** Monkey aborted due to error.
+Events injected: 141
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=1921ms (0ms mobile, 0ms wifi, 1921ms not connected)
+** System appears to have crashed at event 141 of 500 using seed 1513150772582

@@ -14,5 +14,6 @@ def monkeyConfig(init_file):
     app["package_name"] = config['DEFAULT']['package_name']
     # app["activity"] = config['DEFAULT']['activity']
     app["net"] = config['DEFAULT']['net']
+    app["vm"] = config['DEFAULT']['vm']
     app["cmd"] = config['DEFAULT']['cmd'] + ">"
     return app

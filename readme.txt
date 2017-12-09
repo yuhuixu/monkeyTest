@@ -1,3 +1,8 @@
+2017年12月9日13:20:12
+需要handle flow type, wifi 和genymotion 的区别
+net== wifi     #wlan0
+vm = virtual machine    #eth0
+
 2017年12月2日17:09:52
 C:\Python27\python.exe "C:\Program Files\JetBrains\PyCharm 2017.2\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 12326 --file C:/Users/yuhui/Documents/GitHub/monkeyTest/monkeyTest.py
 pydev debugger: process 15964 is connecting

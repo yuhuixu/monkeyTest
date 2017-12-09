@@ -126,11 +126,24 @@ def get_flow(pid, type, devices):
     """
     adb shell " ps  | grep com.zzl.falcon.internal"
     adb shell cat /proc/1461/net/dev
+    C:\Users\yuhui>adb shell "cat /proc/1462/net/dev"
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+    lo:    1378      24    0    0    0     0          0         0     1378      24    0    0    0     0       0          0
+  ifb1:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  ifb0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth1:  109329     360    0    0    0     0          0         0    54633     365    0    0    0     0       0          0
+  eth0: 4599487   48794    0    0    0     0          0         0 74940972   27986    0    0    0     0       0          0
+
+
+
     :param pid:
     :param type:
     :param devices:
     :return:
     """
+    print "type:", type
     # pid = get_pid(pkg_name)
     upflow = downflow = 0
     if pid is not None:
@@ -147,6 +160,12 @@ def get_flow(pid, type, devices):
                 print(upflow)
                 break
             if type == "gprs" and item.split()[0].decode() == "rmnet0:":  # gprs
+                print("-----flow---------")
+                upflow = int(item.split()[1].decode())
+                downflow = int(item.split()[9].decode())
+                print(upflow)
+                break
+            if type == "virtual_machine" and item.split()[0].decode() == "eth0:":  # eth0
                 print("-----flow---------")
                 upflow = int(item.split()[1].decode())
                 downflow = int(item.split()[9].decode())

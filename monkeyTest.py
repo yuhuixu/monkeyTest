@@ -123,9 +123,12 @@ def start(devicess):
             BaseMonitor.cpu_rate(pid, cpu_kel, devices)
             BaseMonitor.get_men(mc["package_name"], devices)
             BaseMonitor.get_fps(mc["package_name"], devices)
-            BaseMonitor.get_flow(pid, mc["net"], devices)
+            print "mc vm :",mc["vm"]
+            BaseMonitor.get_flow(pid, mc["vm"], devices)           #获取流量
             BaseMonitor.get_battery(devices)
-            if monkeylog.read().count('Monkey finished') > 0:
+            bflag1=(monkeylog.read().count('Monkey finished') > 0)
+            bflag2=(monkeylog.read().count('Monkey aborted due to error') > 0)
+            if  bflag1 or bflag2:
                 endtime = datetime.datetime.now()
                 print(str(devices)+"测试完成咯")
                 writeSum(1, path=PATH("./info/sumInfo.pickle"))

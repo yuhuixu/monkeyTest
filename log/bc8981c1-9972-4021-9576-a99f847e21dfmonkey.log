@@ -1,0 +1,144 @@
+:Monkey: seed=1513150102950 count=500
+:AllowPackage: com.zzl.falcon.internal
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: 25.0%
+//   6: 15.0%
+//   7: 2.0%
+//   8: 2.0%
+//   9: 1.0%
+//   10: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(279.0,462.0)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(281.77905,474.8175)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(168.0,766.0)
+:Sending Touch (ACTION_UP): 0:(179.92905,768.3554)
+:Sending Touch (ACTION_DOWN): 0:(176.0,491.0)
+:Sending Touch (ACTION_UP): 0:(182.05017,495.04202)
+    // Allowing start of Intent { cmp=com.zzl.falcon.internal/com.zzl.falcon.WebViewActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(466.0,841.0)
+:Sending Touch (ACTION_UP): 0:(463.3551,832.72974)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(372.0,112.0)
+:Sending Touch (ACTION_UP): 0:(361.35132,107.75082)
+:Sending Touch (ACTION_DOWN): 0:(371.0,1124.0)
+:Sending Touch (ACTION_UP): 0:(327.33066,1184.0)
+:Sending Touch (ACTION_DOWN): 0:(448.0,153.0)
+:Sending Touch (ACTION_UP): 0:(442.7927,152.25612)
+:Sending Touch (ACTION_DOWN): 0:(715.0,697.0)
+:Sending Touch (ACTION_UP): 0:(704.22424,697.18835)
+:Sending Touch (ACTION_DOWN): 0:(665.0,103.0)
+:Sending Touch (ACTION_UP): 0:(666.45996,89.23674)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+    //[calendar_time:2017-12-09 00:25:37.637  system_uptime:2890736]
+    // Sending event #100
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(404.0,212.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(503.13443,270.07782)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(696.0,679.0)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(696.0958,670.25085)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(192.0,87.0)
+:Sending Touch (ACTION_UP): 0:(141.69067,201.23079)
+:Sending Touch (ACTION_DOWN): 0:(203.0,4.0)
+:Sending Touch (ACTION_UP): 0:(287.05963,0.0)
+:Sending Touch (ACTION_DOWN): 0:(214.0,452.0)
+:Sending Touch (ACTION_UP): 0:(202.21004,368.9731)
+:Sending Touch (ACTION_DOWN): 0:(185.0,929.0)
+:Sending Touch (ACTION_UP): 0:(180.87245,934.76953)
+:Sending Touch (ACTION_DOWN): 0:(701.0,62.0)
+:Sending Touch (ACTION_UP): 0:(726.0724,75.644325)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.email/.activity.Welcome } in package com.android.email
+    //[calendar_time:2017-12-09 00:25:39.266  system_uptime:2892331]
+    // Sending event #200
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+    // Rejecting start of Intent { act=android.intent.action.CHOOSER cmp=android/com.android.internal.app.ChooserActivity } in package android
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(87.0,1142.0)
+:Sending Touch (ACTION_UP): 0:(134.83879,1056.8201)
+:Sending Touch (ACTION_DOWN): 0:(677.0,642.0)
+:Sending Touch (ACTION_UP): 0:(687.8303,630.7403)
+:Sending Touch (ACTION_DOWN): 0:(655.0,1183.0)
+:Sending Touch (ACTION_UP): 0:(671.7909,1181.2535)
+:Sending Touch (ACTION_DOWN): 0:(525.0,850.0)
+:Sending Touch (ACTION_UP): 0:(456.60312,835.9154)
+:Sending Touch (ACTION_DOWN): 0:(525.0,326.0)
+:Sending Touch (ACTION_UP): 0:(546.8134,326.32996)
+:Sending Touch (ACTION_DOWN): 0:(391.0,602.0)
+:Sending Touch (ACTION_UP): 0:(411.6706,598.65906)
+:Sending Touch (ACTION_DOWN): 0:(655.0,1181.0)
+:Sending Touch (ACTION_UP): 0:(663.40967,1174.3114)
+:Sending Touch (ACTION_DOWN): 0:(383.0,655.0)
+:Sending Touch (ACTION_UP): 0:(378.31552,649.5316)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(756.0,132.0)
+:Sending Touch (ACTION_UP): 0:(764.66095,123.69086)
+:Sending Touch (ACTION_DOWN): 0:(546.0,114.0)
+:Sending Touch (ACTION_UP): 0:(607.60547,104.888245)
+    //[calendar_time:2017-12-09 00:25:40.151  system_uptime:2893216]
+    // Sending event #300
+    //[calendar_time:2017-12-09 00:25:40.151  system_uptime:2893217]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(338.0,890.0)
+:Sending Touch (ACTION_UP): 0:(344.34152,888.87134)
+:Sending Touch (ACTION_DOWN): 0:(535.0,186.0)
+:Sending Touch (ACTION_UP): 0:(538.984,183.03935)
+:Sending Touch (ACTION_DOWN): 0:(379.0,577.0)
+:Sending Touch (ACTION_UP): 0:(450.08777,581.7419)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.squareup.leakcanary.internal.DisplayLeakActivity } in package com.zzl.falcon.internal
+    // Rejecting start of Intent { act=android.intent.action.CHOOSER cmp=android/com.android.internal.app.ChooserActivity } in package android
+:Sending Touch (ACTION_DOWN): 0:(449.0,1172.0)
+:Sending Touch (ACTION_UP): 0:(470.63846,1163.2583)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+// CRASH: com.zzl.falcon.internal:leakcanary (pid 2076)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.internal.view.menu.MenuBuilder.changeMenuMode()' on a null object reference
+// Build Label: generic/vbox86p/vbox86p:5.1/LMY47D/genymotion03202140:userdebug/test-keys
+// Build Changelist: eng.genymotion.20170320.213640
+// Build Time: 1490046034000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.internal.view.menu.MenuBuilder.changeMenuMode()' on a null object reference
+// 	at android.widget.ActionMenuPresenter$OpenOverflowRunnable.run(ActionMenuPresenter.java:761)
+// 	at android.os.Handler.handleCallback(Handler.java:739)
+// 	at android.os.Handler.dispatchMessage(Handler.java:95)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+** Monkey aborted due to error.
+Events injected: 370
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=14 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=5641ms (0ms mobile, 0ms wifi, 5641ms not connected)
+** System appears to have crashed at event 370 of 500 using seed 1513150102950

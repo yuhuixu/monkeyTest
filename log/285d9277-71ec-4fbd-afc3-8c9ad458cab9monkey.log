@@ -1,0 +1,146 @@
+:Monkey: seed=1513155654721 count=500
+:AllowPackage: com.zzl.falcon.internal
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: 25.0%
+//   6: 15.0%
+//   7: 2.0%
+//   8: 2.0%
+//   9: 1.0%
+//   10: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.camera2/com.android.camera.CameraLauncher } in package com.android.camera2
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(70.0,793.0)
+:Sending Touch (ACTION_UP): 0:(60.323174,792.15094)
+:Sending Touch (ACTION_DOWN): 0:(613.0,982.0)
+:Sending Touch (ACTION_UP): 0:(641.20654,957.9064)
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.android.quicksearchbox/.SearchActivity } in package com.android.quicksearchbox
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(221.0,721.0)
+:Sending Touch (ACTION_UP): 0:(216.37079,730.951)
+:Sending Touch (ACTION_DOWN): 0:(160.0,286.0)
+:Sending Touch (ACTION_UP): 0:(131.11256,261.79507)
+:Sending Touch (ACTION_DOWN): 0:(78.0,786.0)
+:Sending Touch (ACTION_UP): 0:(67.949,791.2718)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+:Sending Touch (ACTION_DOWN): 0:(79.0,447.0)
+    //[calendar_time:2017-12-09 01:58:02.724  system_uptime:8435827]
+    // Sending event #100
+:Sending Touch (ACTION_UP): 0:(140.79192,377.86798)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(594.0,747.0)
+:Sending Touch (ACTION_UP): 0:(593.47675,739.8711)
+:Sending Touch (ACTION_DOWN): 0:(458.0,705.0)
+:Sending Touch (ACTION_UP): 0:(449.50882,686.70654)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.android.quicksearchbox/.SearchActivity } in package com.android.quicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(458.0,226.0)
+:Sending Touch (ACTION_UP): 0:(365.93857,319.62354)
+:Sending Touch (ACTION_DOWN): 0:(616.0,831.0)
+:Sending Touch (ACTION_UP): 0:(598.4436,828.81335)
+:Sending Touch (ACTION_DOWN): 0:(556.0,830.0)
+:Sending Touch (ACTION_UP): 0:(568.2741,858.02795)
+:Sending Touch (ACTION_DOWN): 0:(537.0,730.0)
+:Sending Touch (ACTION_UP): 0:(534.2559,728.70166)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(734.0,721.0)
+:Sending Touch (ACTION_UP): 0:(764.6564,745.03064)
+:Sending Touch (ACTION_DOWN): 0:(406.0,837.0)
+:Sending Touch (ACTION_UP): 0:(380.4984,798.77576)
+:Sending Touch (ACTION_DOWN): 0:(260.0,135.0)
+    //[calendar_time:2017-12-09 01:58:03.364  system_uptime:8436429]
+    // Sending event #200
+:Sending Touch (ACTION_UP): 0:(273.52115,258.40738)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.android.browser cmp=com.android.browser/.BrowserActivity } in package com.android.browser
+:Sending Touch (ACTION_DOWN): 0:(159.0,714.0)
+:Sending Touch (ACTION_UP): 0:(166.15984,713.046)
+:Sending Touch (ACTION_DOWN): 0:(111.0,720.0)
+:Sending Touch (ACTION_UP): 0:(38.37073,751.37335)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(436.0,829.0)
+:Sending Touch (ACTION_UP): 0:(412.57498,822.97284)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(20.0,811.0)
+:Sending Touch (ACTION_UP): 0:(20.004606,813.3491)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+:Sending Touch (ACTION_DOWN): 0:(712.0,522.0)
+:Sending Touch (ACTION_UP): 0:(706.2952,491.9123)
+:Sending Touch (ACTION_DOWN): 0:(66.0,955.0)
+    //[calendar_time:2017-12-09 01:58:04.630  system_uptime:8437695]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(78.9018,992.0307)
+:Sending Touch (ACTION_DOWN): 0:(538.0,486.0)
+:Sending Touch (ACTION_UP): 0:(557.9992,529.1123)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+:Sending Touch (ACTION_DOWN): 0:(322.0,287.0)
+:Sending Touch (ACTION_UP): 0:(329.70987,185.9614)
+:Sending Touch (ACTION_DOWN): 0:(107.0,365.0)
+:Sending Touch (ACTION_UP): 0:(107.46174,364.81796)
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.android.quicksearchbox/.SearchActivity } in package com.android.quicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(151.0,250.0)
+:Sending Touch (ACTION_UP): 0:(150.83272,244.32585)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.gallery3d/.app.Gallery } in package com.android.gallery3d
+:Sending Touch (ACTION_DOWN): 0:(338.0,1084.0)
+:Sending Touch (ACTION_UP): 0:(196.88625,1152.5619)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(440.0,891.0)
+:Sending Touch (ACTION_UP): 0:(447.4845,877.1985)
+:Sending Touch (ACTION_DOWN): 0:(74.0,82.0)
+:Sending Touch (ACTION_UP): 0:(72.84409,81.40173)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+    //[calendar_time:2017-12-09 01:58:05.766  system_uptime:8438831]
+    // Sending event #400
+:Sending Touch (ACTION_DOWN): 0:(21.0,1152.0)
+:Sending Touch (ACTION_UP): 0:(37.402023,1134.682)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(521.0,699.0)
+:Sending Touch (ACTION_UP): 0:(529.7464,698.7834)
+:Sending Touch (ACTION_DOWN): 0:(627.0,182.0)
+:Sending Touch (ACTION_UP): 0:(571.351,276.8397)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(487.0,806.0)
+:Sending Touch (ACTION_UP): 0:(490.19775,801.2077)
+:Sending Touch (ACTION_DOWN): 0:(648.0,1093.0)
+:Sending Touch (ACTION_UP): 0:(682.50116,1172.9269)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+    // Rejecting start of Intent { act=android.search.action.GLOBAL_SEARCH cmp=com.android.quicksearchbox/.SearchActivity } in package com.android.quicksearchbox
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzl.falcon.internal/com.zzl.falcon.EntranceActivity } in package com.zzl.falcon.internal
+:Sending Touch (ACTION_DOWN): 0:(518.0,777.0)
+:Sending Touch (ACTION_UP): 0:(445.10468,663.0807)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=2 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=5362ms (0ms mobile, 0ms wifi, 5362ms not connected)
+// Monkey finished

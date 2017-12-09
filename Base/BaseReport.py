@@ -188,14 +188,19 @@ class OperateReport:
 
 
     def close(self):
+        print"wd close"
         self.wd.close()
 
     def analysis(self, info):
         print "1111"
         for t in info:
             for wrap in t:
-                name = wrap + "detail" # sheet名字
-                worksheet = self.wd.add_worksheet(name)
+                if ":5555"in wrap:
+                    name = wrap.replace(":","_") + "detail"  # sheet名字
+                else:
+                    name = wrap + "detail" # sheet名字
+                #handle propble:   Exception: Invalid Excel character '[]:*?/\' in sheetname '192.168.179.101:5555detail'
+                worksheet = self.wd.add_worksheet(name)    #2017年12月9日14:03:48
                 worksheet.set_column("A:A", 10)
                 worksheet.set_column("B:B", 10)
                 worksheet.set_column("C:C", 10)
